@@ -1,0 +1,35 @@
+.card-details
+  margin-bottom: 66px
+
+  .card
+    margin-top: 2em
+    margin-bottom: 3em
+    margin-right: 1px 
+
+    &.show-frontside
+      .frontside, .backside
+        width: 100%
+
+        img
+          width: 60%
+          margin: 0 auto
+
+  .spread-cards
+    margin-bottom: 33px
+
+  h2
+    margin: 0 0 30px
+
+  p
+    font-size: 1.4em
+
+  .description
+    display: inline-block
+    max-height: 0px
+    overflow: hidden
+    transition: max-height 0.5s ease
+
+  &.show-full-description
+    .description
+      max-height: 10000px
+      transition: max-height 0.5s ease

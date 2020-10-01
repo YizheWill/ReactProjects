@@ -1,0 +1,34 @@
+.spread-cards
+  width: 100%
+  display: block
+
+  .spreadDescription
+    font-size: 1.1em
+    text-align: center
+
+  .cards
+    text-align: center
+
+    &:after
+      display: block
+      content: ''
+      clear: both
+
+    .card
+      width: 33%
+      margin-bottom: 10px
+      display: inline-block
+
+      img
+        margin: 0 auto
+
+      .spreadTypeCardFeature
+        font-size: 0.9em
+
+      &.show-frontside
+        .frontside, .backside
+          img
+            width: 100%
+
+        .spreadTypeCardFeature
+          transform: rotateY(-180deg)
