@@ -15,6 +15,7 @@ const postSchema = {
   },
   comments: [
     { text: String, commentPostedBy: { type: ObjectId, ref: "User" } },
+    //这个type是来自与line 2
   ],
   // 发现了一个mongoose的规则，也就是说可以直接text:String,但是如果需要指定为required，那么就
   // 转化成一个object
