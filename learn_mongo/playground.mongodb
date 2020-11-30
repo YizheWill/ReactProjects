@@ -1,0 +1,2 @@
+use('sample_training');
+db.companies.find({$not: [{"category_code": ""}]})

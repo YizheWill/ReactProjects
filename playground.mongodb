@@ -1,0 +1,1 @@
+db.companies.find({"founded_year": 2004, "$nor": [{"category_code": ""},{"web category_code": ""}]}).count()
